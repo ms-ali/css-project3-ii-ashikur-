@@ -1,0 +1,791 @@
+/* common css */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --textColorone: #353535;
+    --textColortwo: #FFFFFF;
+    --expfontcolor: #7A7A7A;
+    --iconColor: #FFCC00;
+    --gradientone: #FFCC00;
+    --gradienttwo: #FFF5CB;
+    --fontfamilyone: "Poppins", sans-serif;
+    --fontfamilytwo: "PT Sans", sans-serif;
+}
+    
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1108px;
+    margin: auto;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+/* common css ends */
+/* nav bar starts */
+
+nav .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav .logo{
+    width: 30%;
+    
+}
+
+nav .menu{
+    width: 70%;
+    text-align: right;
+    
+    
+}
+
+nav .menu ul li{
+    display: inline-block;
+}
+
+nav .menu ul li a{
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--textColorone);
+    font-family: "Poppins", sans-serif;
+    padding: 18px 22px 5px;
+    position: relative;
+
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--textColorone);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.45s;
+}
+
+nav .menu ul li:hover a::after{
+    width: 100%;
+
+}
+/* nav bar ends */
+/* hero starts */
+
+#hero{
+    /* background-color: aquamarine; */
+    position: relative;
+}
+
+#hero .container{
+    /* background-color: #FFCC00; */
+    margin-top: 119px;
+    display: flex;
+    
+    
+}
+
+#hero .container .herocontent{
+    /* background-color: yellow; */
+    width: 50%;
+}
+
+#hero .container .backgroundpic{
+    width: 50%;
+}
+
+#hero .herocontent h5{
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--fontfamilyone);
+    color: var(--textColorone);
+    margin-right: 19px;
+    /* background-color: antiquewhite; */
+    width: 300px;
+    margin-bottom: 19px;
+}
+
+#hero .herocontent h1{
+    font-weight: 800;
+    font-size: 64px;
+    color: var(--textColorone);
+    font-family: var(--fontfamilytwo);
+    margin-bottom: 37px;
+}
+
+#hero .herocontent p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--textColorone);
+    font-family: var(--fontfamilyone);
+}
+
+#hero .herocontent a.buttonone{
+    display: inline-block;
+    background-color: var(--iconColor);
+    width: 209px;
+    height: 69px;
+    text-align: center;
+    font-family: var(--fontfamilyone);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--textColortwo);
+    line-height: 60px;
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-top: 45px;
+    
+}
+
+#hero .herocontent a.buttontwo{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 209px;
+    height: 69px;
+    text-align: center;
+    font-family: var(--fontfamilyone);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--textColorone);
+    line-height: 60px;
+    border-radius: 20px;
+    
+    
+}
+
+
+
+/* hero ends */
+/* mouse starts */
+#mouse .container{
+    display: flex;
+    justify-content: center;
+}
+
+#mouse .container img{
+    margin-top: 11px;
+    
+}
+/* mouse ends */
+/* about me starts */
+
+#aboutme .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: linear-gradient(to right, #FFCC00, #FFF5CB );
+    margin-top: 104px;
+    height: 556px;
+    position: relative;
+}
+#aboutme .backgroundpic2{
+    width: 50%;
+    margin-top: 26px;
+    
+}
+
+#aboutme .aboutcontent{
+    width: 50%;
+    margin-top: 100px;
+    
+    
+    
+}
+
+
+
+#aboutme .aboutcontent h1{
+    color: var(--textColorone);
+    font-family: var(--fontfamilytwo);
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 26px;
+}
+
+#aboutme .aboutcontent p{
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 190%;
+    color: var(--textColorone);
+}
+
+#aboutme .aboutcontent a.buttonthree{
+    display: inline-block;
+    font-family: var(--fontfamilyone);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--textColorone);
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 17px 44px;
+    margin-top: 45px;
+}
+
+#aboutme .aboutcontent img{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 75px;
+
+}
+/* about me ends */
+/* cards starts */
+
+#cards .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+#cards .card1{
+    width: 350px;
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-top: 151px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    
+}
+
+#cards .card1 img{
+    display: block;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 18px;
+}
+#cards .card1 h4{
+    font-size: 22px;
+    color: var(--textColorone);
+    font-weight: 600;
+    text-align: center;
+    margin: 18px 0;
+    
+
+}
+
+#cards .card1 p{
+    width: 212px;
+    text-align: center;
+    color: var(--textColorone);
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    padding-bottom: 57px;
+    margin: auto;
+}
+
+#cards .card2{
+    width: 350px;
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-top: 151px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+#cards .card2 img{
+    display: block;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 18px;
+}
+
+#cards .card2 h4{
+    font-size: 22px;
+    color: var(--textColorone);
+    font-weight: 600;
+    text-align: center;
+    margin: 18px 0;
+}
+
+#cards .card2 p{
+    width: 212px;
+    text-align: center;
+    color: var(--textColorone);
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    padding-bottom: 57px;
+    margin: auto;
+}
+
+#cards .card3{
+    width: 350px;
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-top: 151px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+#cards .card3 img{
+    display: block;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 18px;
+}
+
+#cards .card3 h4{
+    font-size: 22px;
+    color: var(--textColorone);
+    font-weight: 600;
+    text-align: center;
+    margin: 18px 0;
+}
+
+#cards .card3 p{
+    width: 212px;
+    text-align: center;
+    color: var(--textColorone);
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    padding-bottom: 57px;
+    margin: auto;
+}
+/* cards ends */
+/* branding starts */
+
+#branding .container{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-top: 165px;
+    background-image: linear-gradient(to right, #FFCC00, #FFF5CB );
+    height: 473px;
+    position: relative;
+
+}
+
+#branding .productpic{
+    width: 50%;
+    height: 462px;
+    margin-top: 18px;
+    
+    
+}
+
+#branding .productpic img{
+    display: inline-block;
+    width: 516px;
+    
+}
+
+#branding .brandcnt{
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+#branding .brandcnt h2{
+    color: var(--textColorone);
+    font-size: 44px;
+    font-weight: 800;
+    font-family: var(--fontfamilytwo);
+    text-align: left;
+    margin-top: 83px;
+    margin-left: 102px;
+    margin-bottom: 21px;
+    
+}
+
+#branding .brandcnt p{
+    width: 410px;
+    font-family: var(--fontfamilyone);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--textColorone);
+    margin-left: 102px;
+    margin-bottom: 70px;
+}
+
+a.buttonfour{
+    font-family: var(--fontfamilyone);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--textColorone);
+    padding: 18px 38px 17px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-left: 102px;
+    
+    
+}
+
+#branding .shapes .ellipse1{
+    position: absolute;
+    right: 64px;
+    top: -30px;
+}
+
+#branding .shapes .line{
+    position: absolute;
+    top: 275px;
+    right: 190px;
+    
+    
+}
+/* branding ends */
+/* help starts */
+#help .container{
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+#help .container .option{
+    width: 20%;
+    
+}
+
+#help .option .option1{
+    width: 380px;
+    margin-bottom: 24px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#help .option .option1 img{
+    display: block;
+    margin: 17px 18px 18px 29px;
+    
+    
+    
+}
+
+
+
+#help .option .option1 .option1cnt h5{
+    font-family: var(--fontfamilyone);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--textColorone);
+
+}
+
+#help .option .option1 .option1cnt p{
+    font-family: var(--fontfamilyone);
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--textColorone);
+}
+
+#help .helpcnt{
+    width: 534px;
+    
+    
+    
+}
+
+#help .helpcnt h1{
+    font-family: var(--fontfamilytwo);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--textColorone);
+    width: 534px;
+    text-align: right;
+    margin-bottom: 26px;
+    
+
+}
+
+#help .helpcnt p{
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--textColorone);
+    width: 534px;
+    text-align: right;
+    margin-bottom: 32px;
+}
+
+#help .helpcnt .stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-content: end;
+    
+}
+
+#help .helpcnt div.pone span{
+    font-family: var(--fontfamilytwo);
+    color: var(--textColorone);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#help .helpcnt div.pone{
+    font-family: var(--fontfamilyone);
+    color: var(--textColorone);
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 67px;
+}
+
+#help .helpcnt div.ptwo span{
+    font-family: var(--fontfamilytwo);
+    color: var(--textColorone);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#help .helpcnt div.ptwo{
+    font-family: var(--fontfamilyone);
+    color: var(--textColorone);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/* help ends */
+/* work experience starts */
+#workexp .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+#workexp .heading{
+    font-family: var(--fontfamilytwo);
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--textColorone);
+    text-align: center;
+    margin-top: 225px;
+    margin-bottom: 79px;
+
+}
+
+#workexp .monthdate{
+    border-right: 1px dashed var(--expfontcolor);
+    width: 367px;
+    padding-right: 117px;
+}
+
+#workexp .selfemp{
+    width: 215px;
+    margin-bottom: 120px;
+    
+}
+
+#workexp .selfemp h4{
+    font-family: var(--fontfamilyone);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--textColorone);
+    padding-top: 21px;
+    padding-bottom: 16px;
+
+}
+
+#workexp .selfemp p{
+    font-family: var(--fontfamilyone);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--expfontcolor);
+}
+
+#workexp .designation{
+    width: 60%;
+    margin-bottom: 44px;
+}
+
+#workexp .designation h4{
+    font-family: var(--fontfamilyone);
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--textColorone);
+    padding-top: 21px;
+    padding-bottom: 16px;
+}
+
+#workexp .designation p{
+    width: 630px;
+    font-family: var(--fontfamilyone);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--expfontcolor);
+}
+
+#workexp .container .monthdate::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px dashed var(--expfontcolor);
+    border-radius: 50%;
+    left: 350px;
+    top: -33px;
+    
+
+}
+
+#workexp .container .monthdate .circle{
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 50%;
+    position: absolute;
+    left: 356px;
+    top: -27px;
+    background-color: #52AB70;
+}
+
+#workexp .container .monthdate .selfemp .dashcircle2{
+    width: 30px;
+    height: 30px;
+    border: 1px dashed var(--expfontcolor);
+    border-radius: 50%;
+    position: absolute;
+    left: 352px;
+    top: 210px;
+    background-color: #F5F5F5;
+}
+
+
+#workexp .container .monthdate .circle2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 357px;
+    top: 215px;
+    background-color: #F17676;
+    z-index: 1;
+    
+}
+
+#workexp .container .monthdate .selfemp .dashcircle3{
+    width: 30px;
+    height: 30px;
+    border: 1px dashed var(--expfontcolor);
+    border-radius: 50%;
+    position: absolute;
+    left: 352px;
+    top: 407px;
+    background-color: #F5F5F5;
+}
+
+#workexp .container .monthdate .circle3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 357px;
+    top: 412px;
+    background-color: #FFD233;
+    z-index: 1;
+}
+/* work experience ends */
+/* expert area starts */
+#expertareas{
+    margin-top: 310px;
+    
+}
+
+#expertareas .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+#expertareas .container .expertcnt{
+    width: 50%;
+    height: 496px;
+    
+}
+
+#expertareas .expertcnt h1{
+    font-family: var(--fontfamilytwo);
+    color: var(--textColorone);
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 59px;
+
+
+}
+
+#expertareas .expertcnt p{
+    font-family: var(--fontfamilyone);
+    color: var(--expfontcolor);
+    font-size: 20px;
+    font-weight: 400;
+    width: 585px;
+    margin-bottom: 39px;
+
+}
+
+#expertareas .expertcnt a.buttonfive{
+    padding: 10px 50px 10px 21px;
+    background-color: var(--iconColor);
+    border-radius: 12px;
+    color: white;
+    font-family: var(--fontfamilyone);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 45px;
+
+
+}
+
+#expertareas .range{
+    margin-top: 10px;
+    
+}
+
+#expertareas .range .header{
+    width: 337px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#expertareas .range .header .skills{
+    font-family: var(--fontfamilyone);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColorone);
+    padding: 16px 64px 15px 65px;
+    border-radius: 20px;
+    width: 174px;
+}
+
+#expertareas .range .header .education{
+    font-family: var(--fontfamilyone);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--textColorone);
+    width: 91px;
+    line-height: 55px;
+}
+
+#expertareas .lines{
+    width: 380px;
+    margin-top: 51px;
+}
+
+#expertareas .lines img{
+    display: block;
+    margin-top: 44px;
+}
+/* expert area ends */
